@@ -1,0 +1,35 @@
+image:
+  tag: 0.0.10
+elasticsearch:
+  kibana:
+    enabled: true
+  cerebro:
+    enabled: true
+  zones:
+    - eu-west-1a
+    - eu-west-1b
+  storage:
+    type: gp2
+    classProvisioner: kubernetes.io/aws-ebs
+  dataVolumeSize: 10Gi
+elasticsearch-operator:  
+  rbac:
+    enabled: true
+nginx-ingress: 
+  rbac:
+    create: true
+    serviceAccountName: nginx-ingress
+gitlab:
+  ingress:
+  enabled: true
+  hosts:
+    - name: gitlab.example.local
+  #annotations:
+    # kubernetes.io/tls-acme: "true"
+  #tls:
+    # Secrets must be manually created in the namespace.
+    # - hosts:
+    #   - registry.example.local
+    #   secretName: registry-example-tls
+
+

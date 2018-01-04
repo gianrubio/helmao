@@ -1,0 +1,21 @@
+dependencies:
+- name: prometheus-operator
+  repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
+  version: 0.0.8
+- name: kube-prometheus
+  repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
+  version: 0.0.5
+- name: elasticsearch-operator
+  repository: https://raw.githubusercontent.com/upmc-enterprises/elasticsearch-operator/master/charts/
+  version: 0.1.0
+- name: elasticsearch
+  repository: https://raw.githubusercontent.com/upmc-enterprises/elasticsearch-operator/master/charts/
+  version: 0.1.0
+- name: nginx-ingress
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 0.8.22
+- name: gitlab-omnibus
+  repository: https://charts.gitlab.io
+  version: 0.1.36
+digest: sha256:97ea5d467f05b5f2c034d25fcd23a0794e12fa1fa4ff4f8b85a977bd1e50ce8b
+generated: 2018-01-05T15:41:56.6945477+01:00

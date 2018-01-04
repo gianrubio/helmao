@@ -1,0 +1,29 @@
+dependencies:
+  - name: prometheus-operator
+    version: 0.0.8
+    repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
+
+  - name: kube-prometheus
+    version: 0.0.5
+    repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
+
+  - name: elasticsearch-operator
+    version: 0.1.0
+    repository: https://raw.githubusercontent.com/upmc-enterprises/elasticsearch-operator/master/charts/
+
+  - name: elasticsearch
+    version: 0.1.0
+    repository: https://raw.githubusercontent.com/upmc-enterprises/elasticsearch-operator/master/charts/
+
+  - name: nginx-ingress
+    version: 0.8.22
+    repository:  https://kubernetes-charts.storage.googleapis.com/
+
+  - name: gitlab
+    version: 0.1.36
+    repository: https://gitlab.com/charts/helm.gitlab.io/tree/master/charts
+
+  # fluentd ??? https://github.com/kubernetes/charts/pull/3232 https://github.com/chancez/helm-fluentd/blob/master/templates/fluentd-configmap.yaml
+  # kube-cert-manager - https://github.com/jetstack/cert-manager - 0.1.0
+  # oauth2 oatuh-proxy - change oauth docker image
+  # vault 
